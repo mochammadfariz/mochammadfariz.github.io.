@@ -1,0 +1,149 @@
+html{
+    position: relative;
+}
+
+body{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.jumbotron{
+    background-color: rgb(76, 194, 209);
+}
+
+.jumbotron img {
+    width: 300px;
+    border: 5px solid #666 ;
+}
+hr{
+    width: 250px;
+    border-top: 3px solid rgb(171, 171, 175);
+}
+
+section{
+    min-height: 500px;
+}
+
+.portfolio{
+    background-color: #eee;
+}
+
+.contact{
+    min-height: 800px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(31, 31, 31); 
+    padding-top: 20px;
+}
+
+footer p{
+color: #ffffff;
+font-size: 1.4em;
+}
+
+#greeting {
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+  }
+/* css clock */
+  #clock {
+    display: block;
+      width: 600px;
+      height: 160px;
+      margin: 40px auto 0px;
+  }
+  
+  #clock > div {
+      display: inline-block;
+      width: 30%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+  }
+  
+  .doubleDot {
+      width: 5% !important;
+      font-size: 10em;
+      text-align: center;
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+      border-bottom: 1px solid #000;
+  }
+  
+  #hour1, #hour2, #minute1, #minute2, #second1, #second2 {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      position: relative;
+      float: left;
+      transform-style: preserve-3d;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: 0.7s;
+  }
+  
+  #second2 {
+      animation-name: clockTurn;
+  }
+  
+  @keyframes clockTurn {
+      0% {
+          tranform: rotateX(0deg);
+      }
+      100% {
+          transform: rotateX(90deg);
+      }
+  }
+  
+  #clock > div > div > div {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      text-align: center;
+      background-color: #fff;
+      font-size: 10em;
+      border: 1px solid #000;
+  }
+  
+  .hour1, .minute1, .second1, .hour2, .minute2 {
+      border-right: none !important;
+  }
+  
+  #hour1-1, #hour2-1, #minute1-1, #minute2-1, #second1-1, #second2-1 {
+      transform: translateZ(300px);
+  }
+  
+  #hour1-2, #hour2-2, #minute1-2, #minute2-2, #second1-2, #second2-2 {
+      transform: rotateX(-90deg);
+      margin-top: 100%;
+  }
+  
+  #hour1-3, #hour2-3, #minute1-3, #minute2-3, #second1-3, #second2-3 {
+      transform: translateZ(-300px) rotateX(180deg);
+  }
+  
+  #hour1-4, #hour2-4, #minute1-4, #minute2-4, #second1-4, #second2-4 {
+      transform: rotateX(90deg);
+      margin-top: -100%;
+  }
+
+#date{
+    font-size: 60px;
+    text-align: center;
+}
+
+/* view.php */
+
+
